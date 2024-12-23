@@ -10,18 +10,31 @@ In this work, we conduct a detailed analysis of deep learning models to pinpoint
     ```sh
     ./run start
     ```
-1. Navigate to the project directory:
+2. Navigate to the project directory:
     ```sh
     cd proj/project
     ```
-2. Build the project:
+3.  Navigate to the chisel folder
+    ```sh
+    cd ./chisel
+    ```
+4.  Generate Verilog code according to Chisel design into `build/SIMDEngine.v`
+    ```shell
+    sbt 'runMain simd.SIMDEngineApp'
+    ```
+5.  Back to project directory
+    ```sh
+    cd ../
+    ```
+
+6. Build the project:
     ```sh
     make renode-headless
     ```
-3. Press `space`.
-4. Press `3`.
-5. Press `h` to test the whole AlexNet.
-6. Press `esc` and `Ctrl-D` to exit.
+7. Press `space`.
+8.  Press `3`.
+9. Press `h` to test the whole AlexNet.
+10. Press `esc` and `Ctrl-D` to exit.
 
 ## Note
 
