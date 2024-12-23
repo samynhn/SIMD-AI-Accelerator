@@ -1,5 +1,8 @@
 #   SIMD Instruction Set Support for AI Computing
 
+- For detailed technical information, please refer to [report.pdf](docs/report.pdf)
+- For project presentation slides, see [slides.pdf](docs/slides.pdf)
+
 ## Usage
 
 1.  Build docker workspace for CFU playground
