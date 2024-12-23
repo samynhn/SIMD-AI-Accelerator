@@ -4,8 +4,7 @@
 namespace acal_lab {
 
 void alexNet(convInfo* cInfo, gemmInfo* gInfo, mxPlInfo* mInfo, tensorInfo* tInfo, quantiInfo* qInfo) {
-    unsigned total_conv = 0, total_relu = 0, total_mxpl = 0, total_gemm = 0, total_flatten = 0;
-    unsigned start, end;
+
 
     // NOTE: SIMD version of AlexNet
     simd::Conv(&tInfo[1], &tInfo[0], &cInfo[0], &qInfo[0], PER_LAYER_ADVANCE_QUANTI).execute();
