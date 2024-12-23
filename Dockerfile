@@ -99,7 +99,7 @@ RUN apt-get -qq install default-jdk && \
     apt-get -qq update && \
     apt-get -qq install sbt && \
     apt-get -qq install git make autoconf g++ flex bison && \
-    git clone -c advice.detachedHead=false --branch "v4.202" --depth 1 "http://git.veripool.org/git/verilator" /tmp/verilator && \
+    git clone -c advice.detachedHead=false --branch "v4.202" --depth 1 "https://github.com/verilator/verilator.git" /tmp/verilator && \
     cd /tmp/verilator && \
     unset VERILATOR_ROOT && \
     autoconf && \
