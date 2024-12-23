@@ -1,4 +1,5 @@
 #   SIMD Instruction Set Support for AI Computing
+In this work, we conduct a detailed analysis of deep learning models to pinpoint modules with the highest computational overhead. To mitigate these bottlenecks, we design a custom SIMD (Single Instruction Multiple Data) instruction set, specifically designed to accelerate the computation of these performance-critical modules. By leveraging our tailored SIMD instructions, we achieve significant reductions in computational time, surpassing the performance of conventional serial implementations.
 
 - For detailed technical information, please refer to [report.pdf](docs/report.pdf)
 - For project presentation slides, see [slides.pdf](docs/slides.pdf)
