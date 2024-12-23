@@ -12,7 +12,7 @@ In this work, we conduct a detailed analysis of deep learning models to pinpoint
     ```
 1. Navigate to the project directory:
     ```sh
-    cd projects/project
+    cd proj/project
     ```
 2. Build the project:
     ```sh
@@ -27,7 +27,7 @@ In this work, we conduct a detailed analysis of deep learning models to pinpoint
 
 - The code for AlexNet is located at:
     ```
-    /projects/project/src/acal_lab/libs/models/AlexNet/AlexNet.cc
+    /proj/project/src/acal_lab/libs/models/AlexNet/AlexNet.cc
     ```
     
   Modify the type of the function of the model component (e.g., conv/gemm) to use SIMD or scalar. This allows you to observe the speed difference between SIMD and serial execution.
@@ -35,11 +35,11 @@ In this work, we conduct a detailed analysis of deep learning models to pinpoint
 
 - The SIMD implementation of the model components can be found at:
     ```
-    /projects/project/src/acal_lab/libs/op/simd
+    /proj/project/src/acal_lab/libs/op/simd
     ```
   This directory contains the SIMD instructions we created.
 
 - The hardware design of the SIMD instructions is implemented in:
     ```
-    /projects/project/chisel/src/main/scala/simd
+    /proj/project/chisel/src/main/scala/simd
     ```
